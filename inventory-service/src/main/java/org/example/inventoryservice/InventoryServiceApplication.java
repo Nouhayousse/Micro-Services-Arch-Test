@@ -19,6 +19,8 @@ public class InventoryServiceApplication {
 
         return args -> {
             productRepository.save(Product.builder().name("laptop").price(4800).quantity(10).build());
+            productRepository.save(Product.builder().name("iphone").price(8800).quantity(15).build());
+            productRepository.save(Product.builder().name("readme").price(1200).quantity(50).build());
         };
     }
 

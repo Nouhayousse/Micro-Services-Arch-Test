@@ -6,8 +6,8 @@ import lombok.*;
 
 @EqualsAndHashCode(callSuper = true)
 @Data
-//@AllArgsConstructor
-//@NoArgsConstructor
+@AllArgsConstructor
+@NoArgsConstructor
 @Entity
 
 public class Customer extends BaseEntity {
@@ -16,12 +16,4 @@ public class Customer extends BaseEntity {
     private String email;
     private String phone;
 
-    public Customer(String name, String email, String phone) {
-        super();
-        this.name = name;
-        this.email = email;
-        this.phone = phone;
-    }
-    public Customer() {
-    }
 }
